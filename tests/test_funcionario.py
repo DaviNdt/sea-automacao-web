@@ -34,11 +34,7 @@ def driver():
     driver.quit()
 
 def test_adicionar_funcionario (driver):
-<<<<<<< HEAD
     driver.get("")
-=======
-    driver.get("11")
->>>>>>> cee5f33 (Update URL in test_adicionar_funcionario)
     botao_adicionar_funcionarios = WebDriverWait(driver, 10).until(
         expected_conditions.element_to_be_clickable(
             (By.XPATH, "//button[contains(., '+ Adicionar Funcionário')]")
